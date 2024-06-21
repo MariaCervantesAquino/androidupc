@@ -7,14 +7,11 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
 object AppConstantes {
-    const val BASE_URL = "http://192.168.0.9:3000/"
+    const val BASE_URL = "http://192.168.0.9:3000"
 }
 interface WebService {
-
     @GET("/personas")
     suspend fun obtenerPersonas():Response<PersonasResponse>
-
-
 
     }
 
